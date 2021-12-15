@@ -37,6 +37,12 @@ public class gamblerSimulator {
 				int lostInADay = cash - finalStakeAvailable;
 				System.out.println("Player Lost on "+i+" day is: $" + lostInADay);
 			}
+			 if(cash == 150) {
+				 System.out.println("Day"+i+" is gamblers Luckiest day as he won maximum of "+cash+" $");
+			 }
+			 else if (cash == 50) {
+				 System.out.println("Day"+i+" is gamblers Unluckiest day as he lost maximum of "+cash+" RS");
+			 }
 			finalStakeAvailable = finalStakeAvailable + cash;
 		}
 		System.out.println("Total Stake remaining with Gambler after 20 days is: "+finalStakeAvailable+" $");
